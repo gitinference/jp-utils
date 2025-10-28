@@ -1,16 +1,14 @@
 [project]
-name = "pull-file"
+name = "jp_utils"
 version = "0.1.0"
-description = "Add your description here"
+description = "A simple download hellper to pull files"
 readme = "README.md"
-authors = [
-    { name = "Alejandro Ouslan", email = "alejandro.ouslan@upr.edu" }
-]
+authors = [{ name = "Alejandro Ouslan", email = "alejandro.ouslan@upr.edu" }]
 requires-python = ">=3.12"
-dependencies = []
+dependencies = ["requests>=2.32.5", "tqdm>=4.67.1"]
 
 [project.scripts]
-pull-file = "pull_file:main"
+jp-utils = "jp_utils:main"
 
 [build-system]
 requires = ["uv_build>=0.9.5,<0.10.0"]
